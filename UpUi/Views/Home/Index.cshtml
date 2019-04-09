@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model vMachine
+
+<div>
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+    <br />
+    @Html.LabelFor(m => m.Box)
+    @Html.TextBoxFor(m => m.Box)
+    <br />
+    @Html.LabelFor(m => m.StorageLocation)
+    @Html.TextBoxFor(m => m.StorageLocation)
+    <br />
+    @Html.LabelFor(m => m.CpuCount)
+    @Html.TextBoxFor(m => m.CpuCount)
+    <br />
+    @Html.LabelFor(m => m.DeletionProtection)
+    @Html.TextBoxFor(m => m.DeletionProtection)
+    <br />
+    @Html.LabelFor(m => m.MaxMemory)
+    @Html.TextBoxFor(m => m.MaxMemory)
+    <br />
+    @Html.LabelFor(m => m.UseGui)
+    @Html.CheckBoxFor(m => m.UseGui)
+    
+    <br/>
+    @Html.ActionLink("Save", "About", "Home", null, new {@class = "btn btn-lg btn-primary"})
+
+</div>
